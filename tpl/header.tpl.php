@@ -15,9 +15,10 @@
     </nav>
     <details class="login">
         <summary>Login</summary>
-        <form>
-            <input type="email" placeholder="E-Mail" required><br>
-            <input type="password" placeholder="Passwort" required><br>
+        <form method="POST">
+            <input type="email" name="e_mail" placeholder="E-Mail" required><br>
+            <input type="password" name="pass" placeholder="Passwort" required><br>
+            <input type="hidden" name="login">
             <button>send</button>
         </form>
         <a href="?anmelden=true">neu Anmelden</a>

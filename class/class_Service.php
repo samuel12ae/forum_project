@@ -19,10 +19,14 @@ class Service {
         return $mask->fetchColumn(); // liefert genau einen Wert String, int, boolean
         
     }
-
     // in DB schreiben
     public static function setIntoDB($mask) {
         return $mask->execute();
+    }
+
+    public static function getArray($mask) {
+        $mask->execute();
+        return $mask->fetchAll();
     }
     // insertDB
     // getArrayFromDB
